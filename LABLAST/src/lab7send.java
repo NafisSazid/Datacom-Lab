@@ -17,8 +17,8 @@ public class lab7send {
 		//set output file
 		outclass.setFileName("tempERRDIT.txt");
 		while(!inpclass.isEOF()){
-			String readString = inpclass.takeInput(150);
-			for(int i=readString.length();i<150;i++)readString+=" ";
+			String readString = inpclass.takeInput(125);
+			for(int i=readString.length();i<125;i++)readString+=" ";
 			readString = cnvclass.StringToBinary(readString);
 			readString = sndr.getSender(readString);
 			String writeString = "";

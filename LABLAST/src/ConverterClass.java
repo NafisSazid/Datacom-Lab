@@ -18,6 +18,19 @@ public class ConverterClass {
 		}
 		return sh;
 	}
+	public String NumberToBinary(int number){
+		String ret = "";
+		while(number>0){
+			int a = number%2;
+			number/=2;
+			if(a==1)ret+="1";
+			else if(a==0)ret+="0";
+		}
+		StringBuilder rev = new StringBuilder();
+		rev.append(ret);
+		ret = rev.reverse().toString();
+		return ret;
+	}
 	public Character BinaryToString(String str){
 		return (char)Integer.parseInt(str,2);
 	}

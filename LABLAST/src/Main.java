@@ -5,13 +5,12 @@ public class Main {
 
 	public static void main(String[] args) throws IOException {
 		
-		//lab6 send = new lab6(6);
-		//lab6rec receive = new lab6rec(6);
-		//send.doTask();
-		//receive.doTask();
-		lab6b send = new lab6b();
-		lab6brec rec = new lab6brec();
-		send.dotasksender();
-		rec.dotaskreceiver();
+		Lab8send send = new Lab8send();
+		Lab8rec rec = new Lab8rec();
+		//lab7send send = new lab7send();
+		//lab7rec rec = new lab7rec();
+		send.doTask();
+		rec.doTask();
+		//rec.doTask();
 	}
 }
